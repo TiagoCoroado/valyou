@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Valyou</title>
+
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+<h1>Calculadora Valyou</h1><br>
+
+<div>
+
+    <label for="area">Qual é a tua area de atendimento?</label><br>
+    <select name="area" id="area">
+        <option value="-1">Selecione uma opção</option>
+        <option value="1">FIBRA</option>
+        <option value="2">VIT</option>
+        <option value="3">PROV</option>
+    </select><br><br><br>
+
+
+<label for="carga">Qual é a tua carga horaria?</label><br>
+    <select name="carga" id="carga">
+        <option value="-1">Selecione uma opção</option>
+        <option value="4">4 Horas Diarias</option>
+        <option value="5">5 Horas Diarias</option>
+        <option value="6">6 Horas Diarias</option>
+        <option value="7">7 Horas Diarias</option>
+        <option value="8">8 Horas Diarias</option>
+    </select><br><br><br>
+
+<label for="grau">Qual é o teu Grau de Realização com a média da equipa?</label><br>
+<select name="grau" id="grau">
+    <option value="-1">Selecione uma opção</option>
+        <option value="0">Entre 2 e 2.49</option>
+        <option value="50">Entre 2.50 e 2.99</option>
+        <option value="100">Entre 3 e 3.49</option>
+        <option value="150">Entre 3.50 e 3.99</option>
+        <option value="300">Entre 4 e 5</option>
+</select><br><br><br>
+
+<label for="nps">Qual é o teu NPS?</label><br>
+<input type="number" name="nps" id="nps" placeholder="ex: 53"><br><br><br>
+
+<p class="underline">Motivos de exclusão:</p>
+<label for="iqs" class="letra">O teu IQS é superior a 70%?</label>
+<input type="checkbox" name="iqs" id="iqs" class="box"><br>
+
+<label for="out" class="letra">A tua taxa de Outbound é inferior a 15%?</label>
+<input type="checkbox" name="out" id="out" class="box">
+
+<div></div>
+
+<button class="button-53" role="button" onclick="greal()">Calcular!</button>
+
+<p class="valyou">O valor do teu valyou é: <span id="calculo"></span></p>
+</div>
+
+</div>
+
+<div>
+    <p class="pequenas">Nota que o valor a receber varia com o tempo não trabalhado, este calculo é feito se for cumprido 100% do horário. Isto mostra a importância do Tephra ser justificado diariamente</p>
+</div>
+
+
+
+
+<script src="./script.js"></script>
+</body>
+<article>Versão 1.01 - Tiago Coroado - Abril/2024</article>
+
+</html>
+
